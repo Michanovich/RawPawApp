@@ -17,7 +17,7 @@ import com.viktor.listtest.AboutFood.MuscleMeat;
 import com.viktor.listtest.AboutFood.VegeSNF;
 import com.viktor.listtest.DBModels.Dog;
 
-public class SelectedDogProfile extends AppCompatActivity implements View.OnClickListener{
+public class SelectedDogProfile extends AppCompatActivity implements View.OnClickListener {
     private TextView dogProfileName;
     private TextView dogIdealWeight;
     private TextView dogActivityLevel;
@@ -134,7 +134,7 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
         Double monthlyVege = 0.0;
         Double monthlyFNS = 0.0;
 
-        if(dog.getDog_massunit().equals("Kilograms")){
+        if (dog.getDog_massunit().equals("Kilograms")) {
             double number = dog.getDog_foodmenu();
 
             greater = " kg";
@@ -151,7 +151,7 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
             monthlyVege = ((number * 0.06) * 30) / 1000;
             weeklyFSN = ((number * 0.02) * 7) / 1000;
             monthlyFNS = ((number + 0.02) * 30) / 1000;
-        }else if(dog.getDog_massunit().equals("Pounds")){
+        } else if (dog.getDog_massunit().equals("Pounds")) {
             double number = dog.getDog_foodmenu();
 
             greater = " lbs";
@@ -177,15 +177,15 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
         dogFoodMenu.setText(String.format("%.2f", dog.getDog_foodmenu()) + lower + " daily");
         dogWeeklyFoodMenu.setText(String.format("%.2f", weekly) + greater + " weekly");
         dogMonthlyFoodMenu.setText(String.format("%.2f", monthly) + greater + " monthly");
-        meatGrams.setText("D: " +methodOne()[0] + lower);
+        meatGrams.setText("D: " + methodOne()[0] + lower);
         boneGrams.setText("D: " + methodOne()[5] + lower);
         otherOrgansGrams.setText("D: " + methodOne()[1] + lower);
         liverGrams.setText("D: " + methodOne()[1] + lower);
         liverGrams2.setText("D: " + methodOne()[1] + lower);
-        meatGrams2.setText("D: "+ methodOne()[2] + lower);
+        meatGrams2.setText("D: " + methodOne()[2] + lower);
         boneGrams2.setText("D: " + methodOne()[5] + lower);
         otherOrganGrams2.setText("D: " + methodOne()[1] + lower);
-        fruitGrams.setText("D: "+ methodOne()[4] + lower);
+        fruitGrams.setText("D: " + methodOne()[4] + lower);
         meatGramsWeek.setText("W: " + String.format("%.2f", weeklyMeat1) + greater);
         meatGramsMonth.setText("M: " + String.format("%.2f", monthlyMeat1) + greater);
         meatGrams2Week.setText("W: " + String.format("%.2f", weeklyMeat2) + greater);
@@ -240,23 +240,57 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         Intent i;
 
-        switch (v.getId()){
-            case R.id.meatCardId : i = new Intent(this, MuscleMeat.class); startActivity(i); break;
-            case R.id.meatCardId2 : i = new Intent(this, MuscleMeat.class); startActivity(i); break;
-            case R.id.boneCardId : i = new Intent(this, EdibleBones.class); startActivity(i); break;
-            case R.id.boneCardId2 : i = new Intent(this, EdibleBones.class); startActivity(i); break;
-            case R.id.liverCardId : i = new Intent(this, LiverOtherOrgans.class); startActivity(i); break;
-            case R.id.liverCardId2 : i = new Intent(this, LiverOtherOrgans.class); startActivity(i); break;
-            case R.id.otherOrgansCardId : i = new Intent(this, LiverOtherOrgans.class); startActivity(i); break;
-            case R.id.otherOrgansCardId2 : i = new Intent(this, LiverOtherOrgans.class); startActivity(i); break;
-            case R.id.vegetablesCardId : i = new Intent(this, VegeSNF.class); startActivity(i); break;
-            case R.id.fruitCardId : i = new Intent(this, VegeSNF.class); startActivity(i); break;
-            case R.id.seedsnutsCardId : i = new Intent(this, VegeSNF.class); startActivity(i); break;
-            default:break;
+        switch (v.getId()) {
+            case R.id.meatCardId:
+                i = new Intent(this, MuscleMeat.class);
+                startActivity(i);
+                break;
+            case R.id.meatCardId2:
+                i = new Intent(this, MuscleMeat.class);
+                startActivity(i);
+                break;
+            case R.id.boneCardId:
+                i = new Intent(this, EdibleBones.class);
+                startActivity(i);
+                break;
+            case R.id.boneCardId2:
+                i = new Intent(this, EdibleBones.class);
+                startActivity(i);
+                break;
+            case R.id.liverCardId:
+                i = new Intent(this, LiverOtherOrgans.class);
+                startActivity(i);
+                break;
+            case R.id.liverCardId2:
+                i = new Intent(this, LiverOtherOrgans.class);
+                startActivity(i);
+                break;
+            case R.id.otherOrgansCardId:
+                i = new Intent(this, LiverOtherOrgans.class);
+                startActivity(i);
+                break;
+            case R.id.otherOrgansCardId2:
+                i = new Intent(this, LiverOtherOrgans.class);
+                startActivity(i);
+                break;
+            case R.id.vegetablesCardId:
+                i = new Intent(this, VegeSNF.class);
+                startActivity(i);
+                break;
+            case R.id.fruitCardId:
+                i = new Intent(this, VegeSNF.class);
+                startActivity(i);
+                break;
+            case R.id.seedsnutsCardId:
+                i = new Intent(this, VegeSNF.class);
+                startActivity(i);
+                break;
+            default:
+                break;
         }
     }
 
-    private AlertDialog AskOption(){
+    private AlertDialog AskOption() {
         AlertDialog myDialogBox = new AlertDialog.Builder(this)
                 .setTitle("Delete")
                 .setMessage("Do you want to delete " + dog.getDog_name() + "?")
@@ -283,15 +317,15 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
                     }
                 })
                 .create();
-                return  myDialogBox;
+        return myDialogBox;
     }
 
-    public void deleteDogProfile(View view){
+    public void deleteDogProfile(View view) {
         AlertDialog dialog = AskOption();
         dialog.show();
     }
 
-    public void editDogProfile(View view){
+    public void editDogProfile(View view) {
         Dog thisdog = dog;
 
         Intent intent = new Intent(getApplicationContext(), EditDogProfile.class);
@@ -301,7 +335,7 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
         startActivity(intent);
     }
 
-    public String[] methodOne(){
+    public String[] methodOne() {
         double number = dog.getDog_foodmenu();
 
         String firstGrams = String.format("%.2f", number * 0.8);

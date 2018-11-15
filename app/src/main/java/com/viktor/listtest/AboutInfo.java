@@ -45,7 +45,7 @@ public class AboutInfo extends AppCompatActivity {
         downloadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                downloadManager = (DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE);
+                downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                 Uri uri = Uri.parse("http://dels.nas.edu/resources/static-assets/banr/miscellaneous/dog_nutrition_final_fix.pdf");
                 DownloadManager.Request request = new DownloadManager.Request(uri);
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
@@ -71,8 +71,7 @@ public class AboutInfo extends AppCompatActivity {
             list.remove(referenceId);
 
             // if list is empty means all downloads completed
-            if (list.isEmpty())
-            {
+            if (list.isEmpty()) {
                 // show a notification
                 String NOTIFICATION_CHANNEL_ID = "my_channel_id_01";
                 Log.e("INSIDE", "" + referenceId);
@@ -90,7 +89,7 @@ public class AboutInfo extends AppCompatActivity {
     };
 
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
 
         unregisterReceiver(onComplete);

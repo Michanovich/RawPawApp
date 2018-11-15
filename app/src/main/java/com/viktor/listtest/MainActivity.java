@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         dogNameList.setAdapter(dbReadAdapterDog);
         dogNameList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Dog selected_dog = (Dog) adapterView.getItemAtPosition(i);
                 Intent intent = new Intent(getApplicationContext(), SelectedDogProfile.class);
                 Bundle bundle = new Bundle();
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
                 dialog.setCancelable(false);
                 dialog.setTitle("Delete " + selected_dog.getDog_name());
-                dialog.setMessage("Are you sure you want to delete this profile?" );
+                dialog.setMessage("Are you sure you want to delete this profile?");
                 dialog.setIcon(R.drawable.delete);
                 dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override

@@ -46,13 +46,13 @@ public class EditDogProfile extends AppCompatActivity {
 
         editDogName.setText(dog.getDog_name());
         editDogIdealWeight.setText(Double.toString(dog.getDog_idealweight()));
-        newActivityLevel.setSelection(((ArrayAdapter)newActivityLevel.getAdapter()).getPosition(dog.getDog_activitylevel()));
-        newDogAge.setSelection(((ArrayAdapter)newDogAge.getAdapter()).getPosition(dog.getDog_age()));
+        newActivityLevel.setSelection(((ArrayAdapter) newActivityLevel.getAdapter()).getPosition(dog.getDog_activitylevel()));
+        newDogAge.setSelection(((ArrayAdapter) newDogAge.getAdapter()).getPosition(dog.getDog_age()));
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
-    private AlertDialog AskOption(){
+    private AlertDialog AskOption() {
         AlertDialog myDialogBox = new AlertDialog.Builder(this)
                 .setTitle("Save")
                 .setMessage("Do you want to save changes?")
@@ -89,9 +89,10 @@ public class EditDogProfile extends AppCompatActivity {
                     }
                 })
                 .create();
-        return  myDialogBox;
+        return myDialogBox;
     }
-    public void saveEditedDogProfile(View view){
+
+    public void saveEditedDogProfile(View view) {
         AlertDialog dialog = AskOption();
         dialog.show();
     }

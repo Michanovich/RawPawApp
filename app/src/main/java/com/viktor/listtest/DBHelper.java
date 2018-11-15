@@ -26,32 +26,32 @@ public class DBHelper extends SQLiteOpenHelper {
         this.context = context;
     }
 
-    public void createDatabase() throws IOException{
-        if(!checkDatabase()){
+    public void createDatabase() throws IOException {
+        if (!checkDatabase()) {
             this.getReadableDatabase();
             this.close();
 
             try {
                 copyDatabase();
                 Log.e(TAG, "database created");
-            } catch (IOException e){
+            } catch (IOException e) {
                 Log.e(TAG, e.getLocalizedMessage());
             }
         }
     }
 
-    private boolean checkDatabase(){
+    private boolean checkDatabase() {
         File databaseFile = new File(DB_PATH + DB_NAME);
         return databaseFile.exists();
     }
 
-    private void copyDatabase() throws IOException{
+    private void copyDatabase() throws IOException {
         InputStream inputStream = context.getAssets().open(DB_NAME);
         OutputStream outputStream = new FileOutputStream(DB_PATH + DB_NAME);
 
         byte[] buffer = new byte[1024];
         int length;
-        while((length = inputStream.read(buffer)) > 0){
+        while ((length = inputStream.read(buffer)) > 0) {
             outputStream.write(buffer, 0, length);
         }
         outputStream.flush();
@@ -59,26 +59,26 @@ public class DBHelper extends SQLiteOpenHelper {
         inputStream.close();
     }
 
-    public boolean openDatabase() throws SQLException{
+    public boolean openDatabase() throws SQLException {
         String path = DB_PATH + DB_NAME;
         database = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.CREATE_IF_NECESSARY);
         return database != null;
     }
 
     @Override
-    public synchronized void close(){
-        if(database != null){
+    public synchronized void close() {
+        if (database != null) {
             database.close();
         }
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase){
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1){
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
 }

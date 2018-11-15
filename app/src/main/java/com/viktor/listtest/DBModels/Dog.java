@@ -80,7 +80,7 @@ public class Dog {
 
 
     /*------------------------- STATICKE METODE ZA CRUD -------------------------*/
-    public static ArrayList<Dog> getAllDogNames(Context context){
+    public static ArrayList<Dog> getAllDogNames(Context context) {
         DBAdapter dbAdapter = new DBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open("readable");
@@ -90,7 +90,7 @@ public class Dog {
         Cursor cursor = dbAdapter.database.rawQuery("SELECT * FROM dog", null);
         cursor.moveToFirst();
 
-        while(!cursor.isAfterLast()){
+        while (!cursor.isAfterLast()) {
             Dog dog = new Dog();
             dog.setDog_id(cursor.getString(cursor.getColumnIndex("dog_id")));
             dog.setDog_name(cursor.getString(cursor.getColumnIndex("dog_name")));
@@ -110,7 +110,7 @@ public class Dog {
         return arrayList;
     }
 
-    public static ArrayList<Dog> getDogById(Context context,String dog_id) {
+    public static ArrayList<Dog> getDogById(Context context, String dog_id) {
         DBAdapter dbAdapter = new DBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open("readable");
@@ -120,7 +120,7 @@ public class Dog {
         Cursor cursor = dbAdapter.database.rawQuery("SELECT * FROM dog Where dog_id = ?", new String[]{dog_id});
         cursor.moveToFirst();
 
-        while(!cursor.isAfterLast()){
+        while (!cursor.isAfterLast()) {
             Dog dog = new Dog();
             dog.setDog_id(cursor.getString(cursor.getColumnIndex("dog_id")));
             dog.setDog_name(cursor.getString(cursor.getColumnIndex("dog_name")));
@@ -135,7 +135,7 @@ public class Dog {
         return arrayList;
     }
 
-    public static void insertIntoDog(Context context, String dog_name, double dog_idealweight, String dog_activitylevel, String dog_age, double dog_foodmenu, String dog_massunit){
+    public static void insertIntoDog(Context context, String dog_name, double dog_idealweight, String dog_activitylevel, String dog_age, double dog_foodmenu, String dog_massunit) {
         DBAdapter dbAdapter = new DBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open("writable");
@@ -155,7 +155,7 @@ public class Dog {
         dbAdapter.close();
     }
 
-    public static void deleteDog(Context context, String dog_id){
+    public static void deleteDog(Context context, String dog_id) {
         DBAdapter dbAdapter = new DBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open("writable");
@@ -166,7 +166,7 @@ public class Dog {
         dbAdapter.close();
     }
 
-    public static void updateDog(Context context, Dog dog){
+    public static void updateDog(Context context, Dog dog) {
         DBAdapter dbAdapter = new DBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open("writable");

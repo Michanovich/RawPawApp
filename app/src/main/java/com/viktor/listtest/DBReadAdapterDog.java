@@ -13,15 +13,15 @@ import java.util.ArrayList;
 
 public class DBReadAdapterDog extends ArrayAdapter<Dog> {
 
-    public DBReadAdapterDog(Context context, ArrayList<Dog> items){
+    public DBReadAdapterDog(Context context, ArrayList<Dog> items) {
         super(context, R.layout.list_item_row, items);
     }
 
     @Override
-    public View getView(int position, View rowView, ViewGroup parent){
+    public View getView(int position, View rowView, ViewGroup parent) {
         ViewHolder holder;
 
-        if(rowView == null){
+        if (rowView == null) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             rowView = inflater.inflate(R.layout.list_item_row, parent, false);

@@ -29,12 +29,25 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent i;
 
-        switch (v.getId()){
-            case R.id.dogCardId : i = new Intent(this, CreateDogProfile.class); startActivity(i); break;
-            case R.id.catCardId : i = new Intent(this, CreateCatProfile.class); startActivity(i); break;
-            case R.id.petProfileCardId : i = new Intent(this, MainActivity.class); startActivity(i); break;
-            case R.id.aboutCardId : i = new Intent(this, AboutInfo.class); startActivity(i); break;
-            default:break;
+        switch (v.getId()) {
+            case R.id.dogCardId:
+                i = new Intent(this, CreateDogProfile.class);
+                startActivity(i);
+                break;
+            case R.id.catCardId:
+                i = new Intent(this, CreateCatProfile.class);
+                startActivity(i);
+                break;
+            case R.id.petProfileCardId:
+                i = new Intent(this, MainActivity.class);
+                startActivity(i);
+                break;
+            case R.id.aboutCardId:
+                i = new Intent(this, AboutInfo.class);
+                startActivity(i);
+                break;
+            default:
+                break;
         }
     }
 }

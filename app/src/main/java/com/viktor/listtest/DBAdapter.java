@@ -32,10 +32,9 @@ public class DBAdapter {
     public DBAdapter open(String readableOrWriteable) throws SQLException {
         try {
             dbHelper.openDatabase();
-//            dbHelper.close();
-            if(readableOrWriteable.equals("readable")){
+            if (readableOrWriteable.equals("readable")) {
                 database = dbHelper.getReadableDatabase();
-            } else if (readableOrWriteable.equals("writable")){
+            } else if (readableOrWriteable.equals("writable")) {
                 database = dbHelper.getWritableDatabase();
             }
         } catch (SQLException e) {
@@ -49,14 +48,14 @@ public class DBAdapter {
         try {
             dbHelper.openDatabase();
             database = dbHelper.getWritableDatabase();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             Log.e(TAG, "open >> " + e.toString());
             throw e;
         }
         return this;
     }
 
-    public void close(){
+    public void close() {
         dbHelper.close();
     }
 }

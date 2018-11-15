@@ -50,10 +50,10 @@ public class CreateDogProfile extends AppCompatActivity {
         massSpinner.setAdapter(adapter3);
     }
 
-    public void saveDogProfile (View view){
+    public void saveDogProfile(View view) {
         String name = dogsName.getText().toString();
 
-        if(name.equals("") || idealWeight.getText().toString().equals("") || (name.equals(""))&&(idealWeight.getText().toString().equals(""))){
+        if (name.equals("") || idealWeight.getText().toString().equals("") || (name.equals("")) && (idealWeight.getText().toString().equals(""))) {
             Toast.makeText(getApplicationContext(), "Please input required data", Toast.LENGTH_SHORT).show();
         } else {
             double dog_foodmenu = Formulas.calculateFormula(idealWeight.getText().toString(), activitylevel.getSelectedItem().toString(), age.getSelectedItem().toString(),
