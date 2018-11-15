@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">RawPaw</string>
+    <string name="txtCredits">www.icons8.com/</string>
+    <string name="linktoicons">
+        <a href="https://icons8.com/">Icons8</a>
+    </string>
+    <string name="idealweightlbs">
+        <a href="https://www.petcarerx.com/article/dog-breed-weight-chart/267">1. PetCareRx</a>
+    </string>
+    <string name="idealweightkgs">
+        <a href="https://www.vetwest.com.au/pet-library/weight-the-ideal-bodyweight-range-for-your-dog-by-breed">2. vetwest</a>
+    </string>
+    <string name="idealweightkgsandlbs">
+        <a href="https://dogslim.com/articles/dog-weight-chart.html">3. Dog Slim</a>
+    </string>
+    <string name="aboutInfo">Welcome to RawPaw! \n \n
+
+RawPaw enables you to create a profile for your pet. Within the app there will be several parameters that you must fulfill, such as your pets name, ideal weight (you will be provided 2 links to check ideal weights based on breeds), activity level and age. \n \n
+
+These parameters will enable the app to calculate the amount of food your pet should eat to maintain its ideal weight. Based on that number, the app will divide the food with the help of two methods ((80/10/5/5) and (70/10/5/5/6/2/2)). This will allow you to see how much of what (meat, bone, organs, fruit/vegetables) should be in your pets daily meal. \n \n
+
+RawPaw is constantly being updated with more useful stuff. This version enables the owner to create a profile for his/her pets. However, at present time the app is only suitable for dogs. Nevertheless, future upgrades will include a possibility for cat owners to create their own pet profile. \n \n
+
+If you have any requests or tips on what should be added to this app, feel free to contact me on: rawpawapp@gmail.com \n \n
+
+Credit for icons used in this app:</string>
+    <string name="downloadText">Click the button below to download a PDF about your dog"'"s nutritional needs</string>
+    <string name="linksofweights">Links that could help you determine your dog\'\s ideal weight:</string>
+    <string name="downloadPDF">Download PDF</string>
+    <string name="disclaimer">DISCLAIMER: \n
+        The information from this app is not provided or generated from a licensed or certified Veterinarian, Vet Tech, or Animal Nutritionist. This app was developed from consolidation of trusted online resources, experiences from feeding raw diets, and online discussions from online forums. This app and it’s information is to be used at your own risk. If you have any questions concerning your pet eating a raw diet, it should be discussed with your veterinarian. \n \n
+        RawPaw is not responsible for those who try to use this app for anything other than its intended purpose. Under no circumstances will the app’s administrators be held liable in any way for any information posted, including but not limited to loss or damage of any kind incurred as a result of the use of any opinions, links, resources, or information that may be posted or otherwise made available via this app.</string>
+    <string name="VSNFTitle">Vegetables, Seeds, Nuts and Fruit Guide</string>
+    <string name="VSNFFirst">The addition of vegetables, seeds, nuts, and fruit provide essential nutrients, beneficial phytonutrients, soluble and insoluble fiber to a raw diet for dogs. Vegetables, seeds, nuts, and fruit prove useful to complete nutritional holes in diets without the frequent use of whole prey.</string>
+    <string name="VSNFSecond">Carnivores do not have the essential tools to properly breakdown and digest plant matter in comparison to omnivores. Dogs do not have salivary enzymes for carbohydrate digestion and their jaw structure does not allow for grinding plant ingredients. However, dogs possess pancreatic enzymes for carbohydrate and starch digestion. It is recommended to process vegetables, seeds, and nuts to allow for enzymatic digestion.</string>
+    <string name="VSNFVege">Vegetables \n
+Out of the 10% plant ingredients ratio in BARF, 7% should come from vegetables. Select vegetables high in nutrients and low in carbohydrates. Leafy greens are the recommended vegetables to add to a raw diet. \n \n
+
+Puree, ferment, steam, or boil vegetables for optimal digestion and nutrient absorption. Raw vegetables do not digest well and are passed as waste. \n \n
+
+Vegetable Recommendations: \n \n
+
+Kale \n
+Sprouts \n
+Spinach \n
+Broccoli \n \n
+
+Do not feed onions, leeks, chives, and green tomato plant.</string>
+    <string name="VSNFSeeds">Seeds and Nuts \n
+Out of the 10% plant ingredients ratio in BARF, it is recommended to feed 2% seeds and/or nuts. Select pet safe raw seeds and nuts for their fatty acid, vitamin, and mineral benefits. \n \n
+
+Raw seeds and nuts do not digest well. Soak raw seeds and nuts for 12-24 hours before grinding. Grind seeds in a food processor before feeding. Additionally, you can ferment seeds and nuts for probiotic benefit! \n \n
+
+Seeds and Nuts Recommendations: \n \n
+
+Sunflower Seeds \n
+Hemp Seeds \n
+Pumpkin Seeds \n
+Almonds \n \n
+
+Do not feed tree nuts such as pecans, walnut varieties, and macadamia. </string>
+    <string name="VSNFFruit">Fruits \n
+Out of the 10% plant ingredients ratio in BARF, it is recommended to feed 1% fruit. It is important to choose fruit high in antioxidants without starches. Berries are recommended to add to a raw diet. \n \n
+
+Fruit is mostly water, special preparation is not necessary when feeding berries. It is important to remember fruits are high in sugar which is why they are fed minimally. \n \n
+
+Berry Recommendations: \n \n
+
+Blueberries \n
+Blackberries \n
+Raspberries \n
+Mulberries \n \n
+
+Do not feed fruit pits, grapes, raisins, or dates which can cause kidney failure in dogs.</string>
+    <string name="boneTitle">Raw Meaty Bones Feeding Guide</string>
+    <string name="boneFirst">How to safely feed raw edible bones</string>
+    <string name="boneSecond">Each raw diet has a requirement for raw edible bone and feeding raw meaty bones in appropriate amounts will fulfill it. Raw meaty bones are edible bones covered in muscle meat and connective tissues. The bones are soft enough to be eaten without causing damage. Bones are essential in a raw diets to provide necessary calcium and other nutrients which plays a vital role in creating firm stool.</string>
+    <string name="boneThird">Raw meaty bones to feed: wings, ribs, tails, necks, feet, backs</string>
+    <string name="boneFourth">Weight Bearing Bones \n
+Weight bearing, wreck, or recreational bones are found in large grazing animals (cow, venison, ox, etc.). These bones can cause fractures to teeth and jaw if your pet is an aggressive chewer. Additionally, if large pieces are ingested blockage could occur. \n \n
+
+However if your pet is a gentle chewer and is not a gulper, large weight bearing bones can be fed with large amounts of meat still attached to encourage chewing. When providing a meaty weight bearing bone, supervision is crucial while your pet is eating and chewing to prevent any injuries. Take away the bone when all of the meat has been removed and save the bone to make a yummy bone broth!</string>
+    <string name="boneFifth">Weight Bearing Bones
+Weight bearing, wreck, or recreational bones are found in large grazing animals (cow, venison, ox, etc.). These bones can cause fractures to teeth and jaw if your pet is an aggressive chewer. Additionally, if large pieces are ingested blockage could occur.
+
+However if your pet is a gentle chewer and is not a gulper, large weight bearing bones can be fed with large amounts of meat still attached to encourage chewing. When providing a meaty weight bearing bone, supervision is crucial while your pet is eating and chewing to prevent any injuries. Take away the bone when all of the meat has been removed and save the bone to make a yummy bone broth!</string>
+    <string name="boneSixth">RAW MEATY BONE FEEDING RECOMMENDATIONS \n
+The following information is average RMB recommendations based off of  pet type and size. If you have a pet with gulping tendencies, it is recommended to feed larger items to encourage chewing and prevent choking.</string>
+    <string name="boneSmall">Small Breed Dogs: \n
+Small/tiny breed dogs require less dense bones which allows them to properly crush and digest the item without causing damage. Such as: \n \n
+whole quail \n
+chicken wings \n
+duck feet \n
+chicken necks \n
+cornish hen</string>
+    <string name="boneMedium">Medium Breed Dogs: \n
+Medium breed dogs are flexible when it comes to providing RMBs. Additionally all recommendations for small breeds can be fed and: \n \n
+chicken backs \n
+duck necks \n
+chicken quarters \n
+pork tails \n
+duck wings</string>
+    <string name="boneLarge">Large and Giant Breed Dogs: \n
+Large and giant breeds require larger cuts to prevent choking. Smaller RMBs can be fed to dogs who do not have tendencies to gulp. \n
+List for large and giant breed dogs: \n \n
+whole prey rabbit \n
+turkey neck \n
+lamb head \n
+pork feet \n
+turkey feet</string>
+    <string name ="LiverTitle">Raw Offal and Liver Feeding Guide</string>
+    <string name="LiverFirst">How to feed liver and secreting organs</string>
+    <string name="LiverSecond">Organs are the most nutrient dense part of an animal.  Best of all, because organ meats are relatively inexpensive, they give the most bang for your raw feeding buck! Meat and bone are lacking in many important nutrients which is why it is required to feed organs in your pet’s diet.</string>
+    <string name="LiverThird">Let’s talk about liver! \n
+Liver is known to be one of the most concentrated sources of vitamin A. Vitamin A assists in digestion, keeps reproductive organs healthy, and is a powerful antioxidant. It is a also a great source of folic Acid, B vitamins (especially vitamin B12), and Iron. While liver is highly nutritious, its precious nutrients are very much affected by heat, so never cook it or the digestive enzymes and nutrients will be lost. \n \n
+
+Additionally, liver should never take more than 5% of your pet’s diet. Since liver is very high in vitamin A, too much can cause vitamin A toxicity. If you’re feeding the recommended 5%, you’re doing great!</string>
+    <string name="LiverFourth">Why are organs important? \n
+Compared to regular cuts of meat organs are densely packed with just about every nutrient. This includes heavy doses of B vitamins (B1, B2, B6, folic acid and B12) as well as traces of vitamin D. \n \n
+
+Organ meats are also loaded with minerals like phosphorus, iron, copper, magnesium and iodine, and provide the important fat-soluble vitamins A, D, E and K. Note, animals pasture raised and wild game contain even higher levels of these essential nutrients than their grain-fed counterparts.</string>
+    <string name="LiverFifth">Organs are a vital part of raw diets. To achieve balance it is important to feed liver and other secreting organs to ensure the essential vitamins and nutrients are provided. It is important to note 5% of the organ content must be liver and the remaining 5% must be other secreting organs to complete the organ requirement.</string>
+    <string name="LiverSixth">Organs to feed: \n \n
+Liver \n
+Kidney \n
+Spleen \n
+Pancreas \n
+Brain \n
+Thymus \n
+Testicles \n
+Ovaries</string>
+    <string name="LiverSeventh">FEEDING ORGANS TO PICKY EATERS \n
+Introducing organs can be tricky and some pets will refuse to eat them. \n
+Although there are ways to encourage eating organs for even the pickiest eaters! \n \n
+1. Grind and Hide \n
+Organs are soft enough to allow you to grind them at home even if you do not own a grinder. Dice up partially frozen liver and organs then put in a food processor to blend. You can mix in ground meat, in bone broth, or in kefir to encourage eating. Phase out blend into small chunks. \n \n
+
+2. Small Chunked Mixture \n
+Cut organs into very small chunks and create a muscle meat mixture with the organ cubes. As your pet begins eating the mixture, slowly introduce larger chunks of organ and less of muscle meat until your pet is eating organs in whole cuts. \n \n
+
+3. Frozen Portion Sizes \n
+Prep organs into individual portion sizes and freeze to feed. Additionally you can blend all organs into a paste, divide into ice trays, to freeze into cubes. Slowly provide less frozen portions until your pet is eating thawed out servings. \n \n
+
+4. Lightly Sear \n
+The absolute last resort is lightly searing the outside and the middle must remain raw. Organs are highly effected by cooking, the sear will only encourage eating. You must slowly phase out the searing until your pet is eating raw organs.</string>
+    <string name="meatTitle">Raw Muscle Meat Feeding Guide</string>
+    <string name="meatFirst">What to feed as raw muscle meat</string>
+    <string name="meatSecond">Muscle meat is the main portion of raw fed diets. It is important to know what items are considered muscle meat in raw feeding. Some items are easy to determine what they are, but do not get caught up in the traditional labeling standards for meat. Those simply do not apply in raw feeding.</string>
+    <string name="meatThird">CUTS TO FEED AS MEAT \n
+When feeding raw you should only feed meat under 100mg sodium per serving, it should not be enhanced, seasoned, smoked, or cooked in any way</string>
+    <string name="meatFourth">Wild game is safe to feed. Approved wild game items include venison, duck, rabbit, elk, and moose. Do not feed raccoon, wild boar, fox, and bear. All wild game should be frozen for a minimum of 3 weeks to ensure any parasites are killed before feeding. Meat purchased from a local butcher or grocery store is safe to feed without freezing.</string>
+    <string name="meatFifth">Guide to what is considered muscle meat in a raw fed diet: \n \n
+        muscle \n
+        fat \n
+        heart \n
+        gizzards \n
+        lung \n
+        tongue \n
+        uterus \n
+        pizzle \n
+        green tripe \n
+        trachea \n
+        gullets \n
+        tendons</string>
+    <string name="copyright">Copyright (&#169;) 2018 RawPaw \n
+All Rights Reserved \n \n
+
+This product is protected by copyright and distributed under licenses restricting copying, distribution and decompilation.</string>
+    <string name="infoDog">Information about your dog</string>
+    <string name="idealweight">Ideal weight:</string>
+    <string name="activitylevel">Activity level:</string>
+    <string name="age">Age:</string>
+    <string name="dailymenu">Daily menu:</string>
+    <string name="weeklymenu">Weekly menu:</string>
+    <string name="monthlymenu">Monthly menu:</string>
+    <string name="firstModel">Daily food intake divided based on 80/10/5/5 model</string>
+    <string name="secondModel">Daily food intake divided based on 70/10/5/5/6/2/2 model</string>
+    <string name="muscle">Muscle</string>
+    <string name="bones">Bones</string>
+    <string name="liver">Liver</string>
+    <string name="organs">Other organs</string>
+    <string name="vege">Vegetables</string>
+    <string name="fruit">Fruit</string>
+    <string name="sandn">Seeds and Nuts</string>
+    <string name="deleteprofile">Delete profile</string>
+    <string name="editprofile">Edit profile</string>
+    <string name="dog">Dog</string>
+    <string name="creat_dog_profile">Create a profile for your dog/s</string>
+    <string name="cat">Cat</string>
+    <string name="create_cat_profile">Create a profile for your cat/s</string>
+    <string name="pet_profiles">Pet profiles</string>
+    <string name="list_of_profiles">List of created pet profiles</string>
+    <string name="about">About</string>
+    <string name="about_info">"Information about RawPaw app</string>
+    <string name="new_name">Type new name:</string>
+    <string name="new_dog_name">New dog name</string>
+    <string name="change_weight">Change dog\'\s ideal weight:</string>
+    <string name="new_ideal">New ideal weight</string>
+    <string name="save_changes">Save changes</string>
+    <string name="Dog_profile">Dog profile</string>
+    <string name="info_about_dog_profile">Information about your dog. \n Choose mass measurements (kg/lbs)</string>
+    <string name="your_dogs_name">Your dog\'\s name:</string>
+    <string name="hint_dog_name">Dog\'\s name</string>
+    <string name="dogs_ideal_weight">Dog\'\s ideal weight:</string>
+    <string name="hint_weight">Ideal weight</string>
+    <string name="saveprofile">SAVE PROFILE</string>
+    <string name="name_row">name_row</string>
+    <string name="weight_row">weight_row</string>
+    <string name="meatDescrp">Meat</string>
+    <string name="boneDescrp">Bone</string>
+    <string name="liverDescr">Liver</string>
+    <string name="organDescr">Organs</string>
+    <string name="vegeDescr">Vegetables</string>
+    <string name="fruitDescr">Fruit</string>
+    <string name="seedNDescr">Seeds and nuts</string>
+    <string name="Day">D: </string>
+    <string name="Week">W: </string>
+    <string name="Month">M: </string>
+    <string name="aboutDescr">About</string>
+    <string name="petProfDescr">Pet profiles</string>
+</resources>
