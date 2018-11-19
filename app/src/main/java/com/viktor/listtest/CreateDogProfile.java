@@ -54,18 +54,19 @@ public class CreateDogProfile extends AppCompatActivity {
         String name = dogsName.getText().toString();
 
         if (name.equals("") || idealWeight.getText().toString().equals("") || (name.equals("")) && (idealWeight.getText().toString().equals(""))) {
-            Toast.makeText(getApplicationContext(), "Please input required data", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Please input name and ideal weight", Toast.LENGTH_SHORT).show();
         } else {
             double dog_foodmenu = Formulas.calculateFormula(idealWeight.getText().toString(), activitylevel.getSelectedItem().toString(), age.getSelectedItem().toString(),
                     massSpinner.getSelectedItem().toString());
             Dog.insertIntoDog(getApplicationContext(), dogsName.getText().toString(), Double.valueOf(idealWeight.getText().toString()), activitylevel.getSelectedItem().toString(),
                     age.getSelectedItem().toString(), dog_foodmenu, massSpinner.getSelectedItem().toString());
 
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+
             Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
         }
-        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
     }
 
 //    public void deleteDogProfile(View view) {
