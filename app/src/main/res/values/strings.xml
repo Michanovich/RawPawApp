@@ -13,6 +13,9 @@
     <string name="idealweightkgsandlbs">
         <a href="https://dogslim.com/articles/dog-weight-chart.html">3. Dog Slim</a>
     </string>
+    <string name="PerfectlyRawsome">
+        <a href="https://perfectlyrawsome.com/">Perfectly Rawsome</a>
+    </string>
     <string name="aboutInfo">Welcome to RawPaw! \n \n
 
 RawPaw enables you to create a profile for your pet. Within the app there will be several parameters that you must fulfill, such as your pets name, ideal weight (you will be provided 2 links to check ideal weights based on breeds), activity level and age. \n \n
@@ -108,7 +111,7 @@ turkey neck \n
 lamb head \n
 pork feet \n
 turkey feet</string>
-    <string name ="LiverTitle">Raw Offal and Liver Feeding Guide</string>
+    <string name="LiverTitle">Raw Offal and Liver Feeding Guide</string>
     <string name="LiverFirst">How to feed liver and secreting organs</string>
     <string name="LiverSecond">Organs are the most nutrient dense part of an animal.  Best of all, because organ meats are relatively inexpensive, they give the most bang for your raw feeding buck! Meat and bone are lacking in many important nutrients which is why it is required to feed organs in your pet’s diet.</string>
     <string name="LiverThird">Let’s talk about liver! \n
@@ -218,4 +221,6 @@ This product is protected by copyright and distributed under licenses restrictin
     <string name="Month">M: </string>
     <string name="aboutDescr">About</string>
     <string name="petProfDescr">Pet profiles</string>
+    <string name="title_d">Dynamic Module</string>
+    <string name="creditInfo">Big thanks to Perfectly Rawsome which allowed me to use texts from their web site, check their web site:</string>
 </resources>

@@ -68,12 +68,12 @@ public class CreateDogProfile extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void deleteDogProfile(View view) {
-    }
-
-    public void editDogProfile(View view) {
-    }
-
-    public void saveEditedDogProfile(View view) {
-    }
+//    public void deleteDogProfile(View view) {
+//    }
+//
+//    public void editDogProfile(View view) {
+//    }
+//
+//    public void saveEditedDogProfile(View view) {
+//    }
 }

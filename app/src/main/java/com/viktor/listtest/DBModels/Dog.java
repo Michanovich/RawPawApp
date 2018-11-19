@@ -3,8 +3,10 @@ package com.viktor.listtest.DBModels;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.viktor.listtest.DBAdapter;
 
@@ -151,7 +153,12 @@ public class Dog {
         contentValues.put("dog_foodmenu", dog_foodmenu);
         contentValues.put("dog_massunit", dog_massunit);
 
-        db.insert("dog", null, contentValues);
+        try {
+            long test = db.insertOrThrow("dog", null, contentValues);
+        } catch (SQLException e){
+            int a = 3;
+        }
+
         dbAdapter.close();
     }
 

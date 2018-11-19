@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -17,10 +15,7 @@ import com.viktor.listtest.DBModels.Dog;
 
 public class MainActivity extends AppCompatActivity {
     private ListView dogNameList;
-    private TextView id_dogName;
-    private DBHelper dbHelper;
     private DBReadAdapterDog dbReadAdapterDog;
-    private Dog dog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
