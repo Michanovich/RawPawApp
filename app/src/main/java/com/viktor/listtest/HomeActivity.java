@@ -6,8 +6,13 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView dogCard, catCard, petProfileCard, aboutCard;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //        catCard.setOnClickListener(this);
         petProfileCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
+
+        MobileAds.initialize(this, "ca-app-pub-9102373556091600~1368769916");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     @Override

@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import com.google.gson.Gson;
 import com.viktor.listtest.AboutFood.EdibleBones;
 import com.viktor.listtest.AboutFood.LiverOtherOrgans;
@@ -18,6 +22,8 @@ import com.viktor.listtest.AboutFood.VegeSNF;
 import com.viktor.listtest.DBModels.Dog;
 
 public class SelectedDogProfile extends AppCompatActivity implements View.OnClickListener {
+    private AdView mAdView;
+
     private TextView dogProfileName;
     private TextView dogIdealWeight;
     private TextView dogActivityLevel;
@@ -234,6 +240,11 @@ public class SelectedDogProfile extends AppCompatActivity implements View.OnClic
         vegetablesCardId.setOnClickListener(this);
         fruitCardId.setOnClickListener(this);
         seedsnutsCardId.setOnClickListener(this);
+
+        MobileAds.initialize(this, "ca-app-pub-9102373556091600~1368769916");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     @Override

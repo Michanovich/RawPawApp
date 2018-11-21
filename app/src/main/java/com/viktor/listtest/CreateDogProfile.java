@@ -13,6 +13,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import com.viktor.listtest.DBModels.Dog;
 import com.viktor.listtest.Formulas.Formulas;
 
@@ -23,6 +27,8 @@ public class CreateDogProfile extends AppCompatActivity {
     public Spinner activitylevel;
     public Spinner age;
     public Spinner massSpinner;
+
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +54,11 @@ public class CreateDogProfile extends AppCompatActivity {
         String[] dog_massunit = new String[]{"Kilograms", "Pounds"};
         ArrayAdapter<String> adapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, dog_massunit);
         massSpinner.setAdapter(adapter3);
+
+        MobileAds.initialize(this, "ca-app-pub-9102373556091600~1368769916");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     public void saveDogProfile(View view) {

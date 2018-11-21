@@ -38,5 +38,9 @@
         <activity android:name=".AboutFood.EdibleBones" />
         <activity android:name=".AboutFood.LiverOtherOrgans" />
         <activity android:name=".AboutFood.VegeSNF" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9102373556091600~1368769916"/>
     </application>
 </manifest>
