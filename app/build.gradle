@@ -6,8 +6,8 @@ android {
         applicationId "com.viktor.listtest"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,7 +27,7 @@ dependencies {
     def lifecycle_version = "1.1.1"
     def room_version = "1.1.1"
 
-    implementation 'com.google.android.gms:play-services-ads:17.1.1'
+    implementation 'com.google.android.gms:play-services-ads:17.1.2'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -47,4 +47,16 @@ dependencies {
     //Room components
     implementation "android.arch.persistence.room:runtime:$room_version"
     annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '28.0.0'
+                }
+            }
+
+        }
+    }
 }

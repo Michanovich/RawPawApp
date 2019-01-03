@@ -79,13 +79,4 @@ public class CreateDogProfile extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
         }
     }
-
-//    public void deleteDogProfile(View view) {
-//    }
-//
-//    public void editDogProfile(View view) {
-//    }
-//
-//    public void saveEditedDogProfile(View view) {
-//    }
 }

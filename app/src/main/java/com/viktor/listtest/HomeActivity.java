@@ -20,12 +20,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_home);
 
         dogCard = findViewById(R.id.dogCardId);
-//        catCard = findViewById(R.id.catCardId);
+        catCard = findViewById(R.id.catCardId);
         petProfileCard = findViewById(R.id.petProfileCardId);
         aboutCard = findViewById(R.id.aboutCardId);
 
         dogCard.setOnClickListener(this);
-//        catCard.setOnClickListener(this);
+        catCard.setOnClickListener(this);
         petProfileCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
 
@@ -44,12 +44,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 i = new Intent(this, CreateDogProfile.class);
                 startActivity(i);
                 break;
-//            case R.id.catCardId:
-//                i = new Intent(this, CreateCatProfile.class);
-//                startActivity(i);
-//                break;
+            case R.id.catCardId:
+                i = new Intent(this, CreateCatProfile.class);
+                startActivity(i);
+                break;
             case R.id.petProfileCardId:
-                i = new Intent(this, MainActivity.class);
+                i = new Intent(this, PetProfilesChooser.class);
                 startActivity(i);
                 break;
             case R.id.aboutCardId:

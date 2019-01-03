@@ -89,7 +89,7 @@ Weight bearing, wreck, or recreational bones are found in large grazing animals 
 However if your pet is a gentle chewer and is not a gulper, large weight bearing bones can be fed with large amounts of meat still attached to encourage chewing. When providing a meaty weight bearing bone, supervision is crucial while your pet is eating and chewing to prevent any injuries. Take away the bone when all of the meat has been removed and save the bone to make a yummy bone broth!</string>
     <string name="boneSixth">RAW MEATY BONE FEEDING RECOMMENDATIONS \n
 The following information is average RMB recommendations based off of  pet type and size. If you have a pet with gulping tendencies, it is recommended to feed larger items to encourage chewing and prevent choking.</string>
-    <string name="boneSmall">Small Breed Dogs: \n
+    <string name="boneSmall">Cats and Small Breed Dogs: \n
 Small/tiny breed dogs require less dense bones which allows them to properly crush and digest the item without causing damage. Such as: \n \n
 whole quail \n
 chicken wings \n
@@ -177,6 +177,7 @@ This product is protected by copyright and distributed under licenses restrictin
     <string name="weeklymenu">Weekly menu:</string>
     <string name="monthlymenu">Monthly menu:</string>
     <string name="firstModel">Daily food intake divided based on 80/10/5/5 model</string>
+    <string name="catModel">Daily food intake divided based on 84/6/5/5 model</string>
     <string name="secondModel">Daily food intake divided based on 70/10/5/5/6/2/2 model</string>
     <string name="muscle">Muscle</string>
     <string name="bones">Bones</string>
@@ -197,12 +198,14 @@ This product is protected by copyright and distributed under licenses restrictin
     <string name="about_info">"Information about RawPaw app</string>
     <string name="new_name">Type new name:</string>
     <string name="new_dog_name">New dog name</string>
+    <string name="new_cat_name">New cat name</string>
     <string name="change_weight">Change dog\'\s ideal weight:</string>
+    <string name="change_cat_weight">Change cat\'\s ideal weight:</string>
     <string name="new_ideal">New ideal weight</string>
     <string name="save_changes">Save changes</string>
     <string name="Dog_profile">Dog profile</string>
     <string name="info_about_dog_profile">Information about your dog. \n Choose mass measurements (kg/lbs)</string>
-    <string name="your_dogs_name">Your dog\'\s name:</string>
+    <string name="your_dogs_name">Dog\'\s name:</string>
     <string name="hint_dog_name">Dog\'\s name</string>
     <string name="dogs_ideal_weight">Dog\'\s ideal weight:</string>
     <string name="hint_weight">Ideal weight</string>
@@ -223,4 +226,11 @@ This product is protected by copyright and distributed under licenses restrictin
     <string name="petProfDescr">Pet profiles</string>
     <string name="title_d">Dynamic Module</string>
     <string name="creditInfo">Big thanks to Perfectly Rawsome which allowed me to use texts from their web site, check their web site:</string>
+    <string name="catprofile">Cat profile</string>
+    <string name="info_about_cat">Information about your cat. \n Choose mass measurements (kg/lbs)</string>
+    <string name="your_cats_name">Cat\'\s name:</string>
+    <string name="cats_ideal_weight">Cat\'\s ideal weight:</string>
+    <string name="hint_cat_name">Cat\'\s name</string>
+    <string name="created_dog_profile">Choose between created dog profiles</string>
+    <string name="created_cat_profile">Choose between created cat profiles</string>
 </resources>

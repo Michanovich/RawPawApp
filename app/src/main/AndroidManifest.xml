@@ -19,8 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".HomeActivity"
-            android:screenOrientation = "portrait">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +31,9 @@
         <activity android:name=".SelectedDogProfile" />
         <activity android:name=".MainActivity" />
         <activity android:name=".CreateDogProfile" />
-        <activity android:name=".CreateCatProfile"
-            android:screenOrientation = "portrait"/>
+        <activity
+            android:name=".CreateCatProfile"
+            android:screenOrientation="portrait" />
         <activity android:name=".AboutInfo" />
         <activity android:name=".EditDogProfile" />
         <activity android:name=".AboutFood.MuscleMeat" />
@@ -41,6 +43,12 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9102373556091600~1368769916"/>
+            android:value="ca-app-pub-9102373556091600~1368769916" />
+
+        <activity android:name=".SelectedCatProfile" />
+        <activity android:name=".EditCatProfile" />
+        <activity android:name=".PetProfilesChooser" />
+        <activity android:name=".CatListActivity"></activity>
     </application>
+
 </manifest>
